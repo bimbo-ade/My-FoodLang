@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import Menudata from "../Data/Menudata";
+import { Div, Content } from "./Menu.style";
+import Menudata from "../../Data/Menudata";
+import Cart from "../Cart/Cart";
 const Menu = () => {
   const [filter, setFilter] = useState(Menudata);
   const [activeLink, setActiveLink] = useState(1);
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (menu) => {
+    console.log("add to card");
+    setCart([...cart, menu]);
+  };
   const filterMenu = (category) => {
     const update = Menudata.filter((x) => x.category === category);
 
@@ -37,6 +44,7 @@ const Menu = () => {
   return (
     <Div>
       <h1>Our Menu</h1>
+      {/* <button>cart {cart.length}</button> */}
 
       <button onClick={all} className={activeLink === 1 ? "active" : ""}>
         All
@@ -60,10 +68,10 @@ const Menu = () => {
 
       <Content>
         <>
-          {filter.map((items) => {
+          {filter.map((items, index) => {
             return (
               <>
-                <div className="cardd" key={items.id}>
+                <div className="cardd" key={index}>
                   <div className="img">
                     <img src={items.img} alt="food" />
                   </div>
@@ -73,7 +81,9 @@ const Menu = () => {
 
                     <p className="desc">{items.desc}</p>
                     <h6 className="price"> ${items.price}</h6>
-                    <button className="btn">Add to Cart</button>
+                    <button className="btn" onClick={() => addToCart(cart)}>
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </>
@@ -84,85 +94,4 @@ const Menu = () => {
     </Div>
   );
 };
-const Div = styled.div`
-  width: 80%;
-  text-align: center;
-  margin: 5rem auto;
-  h1 {
-    text-align: center;
-  }
-  button {
-    margin-top: 1.5rem;
-    padding: 0.4rem 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid #ff2156;
-    // background-color: #ff2156;
-    // color: white;
-    font-weight: 500;
-    font-size: 0.6em;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    transition: 0.2s ease;
-
-    &: hover {
-      scale: 2px;
-      background-color: #ff2156;
-      color: white;
-    }
-  }
-  .active {
-    background-color: #ff2156;
-    color: white;
-  }
-`;
-const Content = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  .cardd {
-    margin-top: 2rem;
-    height: 320px;
-    width: 220px;
-    // border: 1px solid #ffd1dc;
-    box-shadow: 0 0 7px 2px #eeeeee;
-    border-radius: 1rem;
-
-    text-align: center;
-  }
-  .img {
-    height: 50%;
-    width: 100%;
-    margin: 1rem auto 0;
-  }
-  img {
-    height: 80%;
-    width: 80%;
-    object-fit: cover;
-    align-items: center;
-    margin: auto;
-  }
-  .title {
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
-  }
-  .price {
-    margin-top: 0.7rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-  }
-  .desc {
-    font-size: 0.7rem;
-  }
-  .btn {
-    margin-top: 0.5rem;
-    padding: 0.5rem 0.5rem;
-    border-radius: 2rem;
-    border: 1px solid #ff2156;
-    background-color: transparent;
-    color: #ff2156;
-    font-weight: 700;
-    font-size: 0.6rem;
-  }
-`;
 export default Menu;

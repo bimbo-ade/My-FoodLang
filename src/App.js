@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Pages/Home";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
-import Menu from "./components/Pages/Menu";
-import Login from "./components/Forms/Login";
-import Signup from "./components/Forms/Signup";
+import Menu from "./components/Pages/Menu/Menu";
+import Login from "./components/Forms/Login/Login";
+import Signup from "./components/Forms/Signup/Signup";
 // import Reviewspage from "./components/Pages/Reviewspage";
-import Contact from "./components/Pages/Contact";
-import Cart from "./components/Pages/Cart";
+import Contact from "./components/Pages/Contact/Contact";
+import Cart from "./components/Pages/Cart/Cart";
 const App = () => {
   return (
     <BrowserRouter>

@@ -1,4 +1,4 @@
-import Images from "../../images";
+import Images from "../../assests/images";
 const Menudata = [
   {
     id: "01",
