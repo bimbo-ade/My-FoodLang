@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { Div, Content } from "./Menu.style";
-import Menudata from "../../Data/Menudata";
-import Cart from "../Cart/Cart";
+import Menudata from "../../../Data/Menudata";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../Redux/Feature/Cart/cartSlice";
 const Menu = () => {
+  const dispatch = useDispatch();
+
   const [filter, setFilter] = useState(Menudata);
   const [activeLink, setActiveLink] = useState(1);
-  const [cart, setCart] = useState([]);
 
-  const addToCart = (menu) => {
-    console.log("add to card");
-    setCart([...cart, menu]);
-  };
   const filterMenu = (category) => {
     const update = Menudata.filter((x) => x.category === category);
 
@@ -44,7 +42,6 @@ const Menu = () => {
   return (
     <Div>
       <h1>Our Menu</h1>
-      {/* <button>cart {cart.length}</button> */}
 
       <button onClick={all} className={activeLink === 1 ? "active" : ""}>
         All
@@ -68,20 +65,26 @@ const Menu = () => {
 
       <Content>
         <>
-          {filter.map((items, index) => {
+          {filter.map((items) => {
+            const { id, img, title, price, desc } = items;
             return (
               <>
-                <div className="cardd" key={index}>
+                <div className="cardd" key={id}>
                   <div className="img">
-                    <img src={items.img} alt="food" />
+                    <img src={img} alt="food" />
                   </div>
 
                   <div>
-                    <h4 className="title">{items.title}</h4>
+                    <h4 className="title">{title}</h4>
 
-                    <p className="desc">{items.desc}</p>
-                    <h6 className="price"> ${items.price}</h6>
-                    <button className="btn" onClick={() => addToCart(cart)}>
+                    <p className="desc">{desc}</p>
+                    <h6 className="price"> ${price}</h6>
+                    <button
+                      className="btn"
+                      onClick={() => {
+                        dispatch(addToCart(items));
+                      }}
+                    >
                       Add to Cart
                     </button>
                   </div>

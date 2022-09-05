@@ -1,10 +1,11 @@
 import React from "react";
 import { Cont, Div } from "./Home.style";
-import banner from "../../../assests/banner.png";
 import Ads from "../../Ads/Ads";
 import PopularDishesPage from "../../PopularDishes/PopularDishes";
 import Reviews from "../../Reviews/Reviews";
 import { Link } from "react-router-dom";
+import Giveaway from "../../Giveaway/Giveaway";
+import Images from "../../../assests/images";
 
 const Home = () => {
   return (
@@ -36,11 +37,15 @@ const Home = () => {
             </Link>
           </button>
         </div>
-        <div className="img">
-          <img src={banner} alt="banner" />
+        <div className="img-cont">
+          <div className="img">
+            <img src={Images.banner} alt="banner" />
+          </div>
         </div>
       </Div>
+
       <PopularDishesPage />
+      <Giveaway />
       <Reviews />
       <Ads />
     </Cont>

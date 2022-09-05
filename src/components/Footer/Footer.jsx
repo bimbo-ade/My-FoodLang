@@ -1,18 +1,18 @@
 import React from "react";
 import { Line, Div } from "./Footer.style";
-import foodlang from "../../assests/foodlang.png";
 import { FaFacebookSquare } from "react-icons/fa";
 
 import { FaTwitterSquare } from "react-icons/fa";
 
 import { FaInstagramSquare } from "react-icons/fa";
+import Images from "../../assests/images";
 const Footer = () => {
   return (
     <>
       <Line></Line>
       <Div>
         <div className="left">
-          <img src={foodlang} alt="logo" width={200} />
+          <img src={Images.foodlang} alt="logo" width={200} />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Perferendis, est velit at eveniet omnis modi sit veniam illo

@@ -1,11 +1,11 @@
 import React from "react";
 import { Div } from "./Signup.style";
-import banner from "../../../assests/banner.png";
 import { Link } from "react-router-dom";
+import Images from "../../../assests/images";
 const Signup = () => {
   return (
     <Div>
-      <img src={banner} alt="login" width={990} />
+      <img src={Images.banner} alt="login" width={990} />
       <div className="overlay"></div>
 
       <div className="right">

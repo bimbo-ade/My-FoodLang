@@ -65,30 +65,28 @@ export const Div = styled.div`
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
-
-    @media ${device.mobile} {
-      // font-size: 0.6rem;
-    }
   }
 
+  .img-cont {
+    height: 100%;
+    width: 100%;
+  }
   .img {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-left: 3rem;
     display: flex;
     align-items: center;
     background-color: #ffd1dc;
-    height: 23rem;
-    width: 30rem;
+    width: 90%;
     border-radius: 50%;
-    @media ${device.mobile} {
-      margin: 3rem auto 0;
 
-      width: 80%;
+    @media ${device.mobile} {
+      margin: 3rem auto 1rem;
+      width: 70%;
     }
     img {
-      width: 600px;
+      width: 100%;
       @media ${device.mobile} {
-        width: 500px;
       }
     }
   }

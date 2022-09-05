@@ -21,5 +21,10 @@ const Images = {
   drinks2: require("./drinks2.png"),
   drinks3: require("./drinks3.png"),
   drinks4: require("./drinks4.png"),
+  banner: require("./banner.png"),
+  foodlang: require("./foodlang.png"),
+  girl: require("./girl.png"),
+  ads: require("./ads.png"),
+  burger: require("./burger.jpeg"),
 };
 export default Images;

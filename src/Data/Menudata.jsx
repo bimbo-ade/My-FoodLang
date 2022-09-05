@@ -1,11 +1,11 @@
-import Images from "../../assests/images";
+import Images from "../assests/images";
 const Menudata = [
   {
     id: "01",
     img: `${Images.Breakfast1}`,
     title: "Chicken Burger",
     price: 24.0,
-
+    amount: 1,
     category: "Breakfast",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisic ",
@@ -16,7 +16,7 @@ const Menudata = [
     img: `${Images.Fastfood3}`,
     title: "Vegetarian Pizza",
     price: 115.0,
-
+    amount: 1,
     category: "Breakfast",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisici",
@@ -27,7 +27,7 @@ const Menudata = [
     img: `${Images.Fastfood7}`,
     title: "Double Cheese ",
     price: 110.0,
-
+    amount: 1,
     category: "Breakfast",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisic",
@@ -38,7 +38,7 @@ const Menudata = [
     img: `${Images.Breakfast4}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Breakfast",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -48,7 +48,7 @@ const Menudata = [
     img: `${Images.Breakfast5}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Lunch",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -58,7 +58,7 @@ const Menudata = [
     img: `${Images.Lunch1}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Lunch",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -68,7 +68,7 @@ const Menudata = [
     img: `${Images.Lunch2}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Lunch",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -78,7 +78,7 @@ const Menudata = [
     img: `${Images.Lunch3}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Lunch",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -88,7 +88,7 @@ const Menudata = [
     img: `${Images.Lunch4}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Lunch",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -98,7 +98,7 @@ const Menudata = [
     img: `${Images.Fastfood1}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Dinner",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -108,7 +108,7 @@ const Menudata = [
     img: `${Images.Fastfood2}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Dinner",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -118,7 +118,7 @@ const Menudata = [
     img: `${Images.Fastfood3}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Dinner",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -128,7 +128,7 @@ const Menudata = [
     img: `${Images.Fastfood4}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -138,7 +138,7 @@ const Menudata = [
     img: `${Images.Fastfood5}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -148,7 +148,7 @@ const Menudata = [
     img: `${Images.Fastfood6}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -158,7 +158,7 @@ const Menudata = [
     img: `${Images.Fastfood7}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -168,7 +168,7 @@ const Menudata = [
     img: `${Images.Fastfood8}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -178,7 +178,7 @@ const Menudata = [
     img: `${Images.drinks1}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Drinks",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -188,7 +188,7 @@ const Menudata = [
     img: `${Images.drinks2}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Drinks",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -198,7 +198,7 @@ const Menudata = [
     img: `${Images.drinks3}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Drinks",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -208,7 +208,7 @@ const Menudata = [
     img: `${Images.drinks4}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Drinks",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -218,7 +218,7 @@ const Menudata = [
     img: `${Images.Fastfood4}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -228,7 +228,7 @@ const Menudata = [
     img: `${Images.Fastfood6}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Fastfood",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",
@@ -238,7 +238,7 @@ const Menudata = [
     img: `${Images.Fastfood3}`,
     title: "Maxican Green Wave",
     price: 110.0,
-
+    amount: 1,
     category: "Dinner",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing",

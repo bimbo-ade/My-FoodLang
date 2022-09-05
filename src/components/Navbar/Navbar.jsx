@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Div } from "./Navbar.style";
-import foodlang from "../../assests/foodlang.png";
 import { BsCartCheck } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavLink, Link } from "react-router-dom";
-import Cart from "../Pages/Cart/Cart";
+import { useSelector } from "react-redux";
+import Images from "../../assests/images";
+
+import { IoIosClose } from "react-icons/io";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const { amount } = useSelector((store) => store.cart);
   return (
     <Div>
       <div className="title">
-        <img src={foodlang} alt="logo" width={120} />
+        <img src={Images.foodlang} alt="logo" width={120} />
       </div>
-      <div className="links">
+      <div className={click ? "  links active " : "links"}>
         <ul>
-          <li>
+          <li onClick={closeMobileMenu}>
             <NavLink
               to="/"
               style={({ isActive }) => ({
@@ -26,7 +33,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <NavLink
               to="/menu"
               style={({ isActive }) => ({
@@ -39,7 +46,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li>
+          <li onClick={closeMobileMenu}>
             <NavLink
               to="/contact"
               style={({ isActive }) => ({
@@ -51,7 +58,7 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <NavLink
               to="/login"
               style={({ isActive }) => ({
@@ -64,30 +71,31 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-      </div>
-      <div>
-        <Link to="/cart">
-          <BsCartCheck />
-          {Cart.length}
-        </Link>
+        <div className="cart-icon">
+          <Link to="/cart" onClick={closeMobileMenu}>
+            <BsCartCheck />
+          </Link>
+          <span>{amount}</span>
 
-        <button>
-          {" "}
-          <NavLink
-            to="/login"
-            style={{
-              textDecoration: "none",
-              color: "white",
-              fontWeight: "500",
-              fontSize: " 0.9rem",
-            }}
-          >
-            Login
-          </NavLink>{" "}
-        </button>
+          <button onClick={closeMobileMenu}>
+            {" "}
+            <NavLink
+              to="/login"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "500",
+                fontSize: " 0.9rem",
+              }}
+            >
+              Login
+            </NavLink>{" "}
+          </button>
+        </div>
       </div>
-      <div className="menu">
-        <AiOutlineMenu />
+
+      <div onClick={handleClick} className="menu-icon">
+        {click ? <IoIosClose /> : <AiOutlineMenu />}
       </div>
     </Div>
   );

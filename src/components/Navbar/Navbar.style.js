@@ -7,47 +7,70 @@ export const Div = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #ffd1dc;
   padding: 2rem 3rem 0.5rem;
+  position: relative;
 
-  .menu{
-    display:none;
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+
     @media ${device.mobile} {
-      display: block;
-      margin-right:-1.3rem;
-      cursor: pointer;
-    }
-    svg{
-      font-size:1.6rem;
-      
-    @media ${device.mobile} {
-      
-    }
+      justify-content: start;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: 60vh;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      background-color: white;
+      z-index: 12;
     }
   }
-  .title {
+
+  .active {
+    @media ${device.mobile} {
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
   }
+
   ul {
     display: flex;
 
     @media ${device.mobile} {
-      display: none;
+      flex-direction: column;
+      margin-bottom: 0.6rem;
     }
   }
+
   ul li {
     list-style: none;
     padding: 0 0.6rem;
     font-weight: 500;
     font-size: 0.9rem;
-    color: FF2B51;
-
+    color: #ff2b51;
     text-decoration: 0;
+
+    @media ${device.mobile} {
+      padding: 0.9rem;
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
-  a {
+
+  ul li a {
     transition: 0.17s ease;
 
     &: hover {
       color: #ff2b51;
     }
   }
+
   button {
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
@@ -56,33 +79,53 @@ export const Div = styled.div`
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
+  }
+
+  .cart-icon {
+    position: relative;
 
     @media ${device.mobile} {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      margin-bottom: 0.7rem;
+    }
+
+    svg {
+      padding-right: 1.2rem;
+      font-size: 1.3rem;
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      top: -0.4rem;
+      right: 6rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      background: red;
+      color: white;
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media ${device.mobile} {
+        top: -0.4rem;
+        right: 2rem;
+      }
     }
   }
-  svg {
-    padding-right: 1rem;
-    font-size: 1.3rem;
-  }
-  }
-  a {
-    position: "relative";
+
+  .menu-icon {
+    font-size: 2rem;
+    display: none;
+
     @media ${device.mobile} {
-      display: none;
+      display: block;
+    }
   }
-  // span {
-  //   // background-color: #ff2156;
-  //   color: #ff2156;
-  //   margin-right: 1rem;
-  // }
-  .active-link {
-    color: red;
-
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
-
 `;

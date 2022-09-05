@@ -20,35 +20,54 @@ export const Div = styled.div`
   .left {
     height: auto;
   }
+  .right {
+    margin-left: 2rem;
+    @media ${device.mobile} {
+      display: none;
+    }
+  }
+`;
+export const Sum = styled.p`
+  text-align: center;
+  margin-top: 2rem;
+  color: red;
+
+  span {
+    font-weight: 700;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+`;
+
+export const Dav = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  .cardd {
-    margin-top: 2rem;
-    height: 320px;
-    width: 220px;
-    // border: 1px solid #ffd1dc;
-    box-shadow: 0 0 7px 2px #eeeeee;
-    border-radius: 1rem;
 
-    text-align: center;
-  }
-  .img {
-    height: 50%;
-    width: 100%;
-    margin: 1rem auto 0;
-  }
-  img {
-    height: 80%;
-    width: 80%;
-    object-fit: cover;
+  align-items: center;
+
+  .cardd {
+    display: flex;
     align-items: center;
-    margin: auto;
+    height: 80px;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
   }
+
   .title {
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
+    text-align: left;
   }
   .price {
     margin-top: 0.7rem;
@@ -59,19 +78,15 @@ export const Div = styled.div`
     font-size: 0.7rem;
   }
   .btn {
-    margin-top: 0.5rem;
+    margin: 0 0.3rem;
     padding: 0.5rem 0.5rem;
-    border-radius: 2rem;
+
     border: 1px solid #ff2156;
-    background-color: transparent;
     color: #ff2156;
     font-weight: 700;
     font-size: 0.6rem;
   }
-  .right {
-    margin-left: 2rem;
-    @media ${device.mobile} {
-      display: none;
-    }
+  svg {
+    font-size: 1.3rem;
   }
 `;

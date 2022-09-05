@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import PopularDishesData from "../Data/PopularDishesData";
+import React from "react";
+import PopularDishesData from "../../Data/PopularDishesData";
 import { Content, Div } from "./PopularDishes.style";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../Redux/Feature/Cart/cartSlice";
 const PopularDishesPage = () => {
-  const [name, setName] = useState("Add to Cart");
-
-  const changeName = () => {
-    setName("Added to Cart");
-  };
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -27,8 +25,13 @@ const PopularDishesPage = () => {
 
                   <p className="desc">{items.desc}</p>
                   <h6 className="price"> ${items.price}</h6>
-                  <button className="btn" onClick={changeName}>
-                    {name}
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      dispatch(addToCart(items));
+                    }}
+                  >
+                    Add to Cart
                   </button>
                 </div>
               </div>

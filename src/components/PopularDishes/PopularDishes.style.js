@@ -68,5 +68,12 @@ export const Content = styled.div`
     color: #ff2156;
     font-weight: 700;
     font-size: 0.6rem;
+
+    transition: 0.2s ease;
+    &: hover {
+      scale: 2px;
+      background-color: #ff2156;
+      color: white;
+    }
   }
 `;

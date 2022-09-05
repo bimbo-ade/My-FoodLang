@@ -5,7 +5,7 @@ const minSizes = {
   desktop: "1025px",
 };
 const maxSizes = {
-  mobile: "620px",
+  mobile: "768px",
   ipad: "768px",
   laptop: "1024px",
   desktop: "1440px",

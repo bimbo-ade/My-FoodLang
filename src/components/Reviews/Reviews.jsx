@@ -1,8 +1,8 @@
 import React from "react";
 import { Content, Div } from "./Reviews.style";
-import Reviewsdata from "../Data/Reviewdata";
+import Reviewsdata from "../../Data/Reviewdata";
 
-import girl from "../../assests/girl.png";
+import Images from "../../assests/images";
 const Reviews = () => {
   return (
     <Div>
@@ -15,7 +15,7 @@ const Reviews = () => {
             <>
               <div className="cardd" key={index}>
                 <p className="desc">"{items.desc}"</p>
-                <img src={girl} alt="food" width={50} />
+                <img src={Images.girl} alt="food" width={50} />
                 <div>
                   <h4 className="title">{items.name}</h4>
                 </div>

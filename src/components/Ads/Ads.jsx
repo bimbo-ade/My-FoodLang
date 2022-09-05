@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Div } from "./Ads.style";
-import bgfo from "../../assests/bgfo.png";
+import Images from "../../assests/images";
 const Ads = () => {
   return (
     <Div>
@@ -31,7 +31,7 @@ const Ads = () => {
           </button>
         </div>
         <div className="right">
-          <img src={bgfo} alt="ads" width={490} />
+          <img src={Images.ads} alt="ads" width={490} />
         </div>
       </div>
     </Div>
