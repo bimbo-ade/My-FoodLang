@@ -46,4 +46,7 @@ export const Div = styled.div`
 `;
 export const Header = styled.h5`
   margin-top: 1.4rem;
+  @media${device.mobile} {
+    margin-top: 1rem;
+  }
 `;

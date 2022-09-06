@@ -4,7 +4,7 @@ import { device } from "../../Device";
 export const Slides = styled.div`
   position: relative;
   @media${device.mobile} {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
   }
 `;
 
@@ -54,7 +54,7 @@ export const Div = styled.div`
 
     @media ${device.mobile} {
       text-align: center;
-      height: 37vh;
+      height: 33vh;
       background-color: #ffe9ee;
 
       border-radius: 1rem;
@@ -90,7 +90,7 @@ export const Div = styled.div`
 
       @media${device.mobile} {
         font-size: 0.7rem;
-        margin-top: 0.9rem;
+        margin-top: 0.6rem;
       }
       @media${device.ipad} {
         font-size: 0.7rem;
@@ -103,7 +103,7 @@ export const Div = styled.div`
       @media${device.mobile} {
         font-size: 1.2rem;
 
-        margin-top: 1rem;
+        margin-top: 0.8rem;
       }
       @media${device.ipad} {
         font-size: 1.2rem;

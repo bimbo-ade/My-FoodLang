@@ -49,7 +49,7 @@ export const Div = styled.div`
 
     @media ${device.mobile} {
       flex-direction: column;
-      margin-bottom: 0.6rem;
+      margin: 0.9rem 0;
     }
   }
 
@@ -62,7 +62,7 @@ export const Div = styled.div`
     text-decoration: 0;
 
     @media ${device.mobile} {
-      padding: 1.35rem;
+      padding: 1.2rem;
       text-align: center;
       margin-bottom: 0;
     }

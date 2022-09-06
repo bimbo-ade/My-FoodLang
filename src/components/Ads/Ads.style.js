@@ -83,7 +83,7 @@ export const Div = styled.div`
     @media ${device.mobile} {
       padding-left: 0rem;
       text-align: center;
-      margin: 2rem 0 1rem;
+      margin: 4rem 0 0;
     }
     img {
       @media ${device.mobile} {
