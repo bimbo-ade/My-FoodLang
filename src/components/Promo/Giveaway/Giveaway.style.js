@@ -18,7 +18,7 @@ export const Div = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  .card {
+  .card-cont {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 60vh;
@@ -32,6 +32,7 @@ export const Div = styled.div`
     border-radius: 1rem;
 
     @media${device.mobile} {
+      height: auto;
       display: none;
       background-image: none;
       display: grid;
@@ -49,12 +50,12 @@ export const Div = styled.div`
       margin: 0 auto 0;
     }
   }
-  .left {
+  .left-cont {
     padding-left: 5rem;
 
     @media ${device.mobile} {
       text-align: center;
-      height: 33vh;
+      height: auto;
       background-color: #ffe9ee;
 
       border-radius: 1rem;
@@ -75,7 +76,7 @@ export const Div = styled.div`
       margin-top: 0.3rem;
 
       @media${device.mobile} {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
       }
       @media${device.ipad} {
         font-size: 0.7rem;
@@ -89,6 +90,7 @@ export const Div = styled.div`
       color: #ff2156;
 
       @media${device.mobile} {
+        letter-spacing: 0.2rem;
         font-size: 0.7rem;
         margin-top: 0.6rem;
       }
@@ -101,9 +103,9 @@ export const Div = styled.div`
       font-size: 2rem;
 
       @media${device.mobile} {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
-        margin-top: 0.8rem;
+        margin-top: 0.6rem;
       }
       @media${device.ipad} {
         font-size: 1.2rem;

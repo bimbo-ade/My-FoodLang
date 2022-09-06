@@ -6,7 +6,7 @@ export const Div = styled.div`
   flex-direction: column;
 
   width: 90%;
-  margin: 3rem auto 0;
+  margin: 2rem auto 0;
 
   .card {
     display: grid;
@@ -15,7 +15,7 @@ export const Div = styled.div`
     width: 100%;
     background-color: #ffe9ee;
     border-radius: 1rem;
-    margin: 5rem auto;
+    margin: 1rem auto;
 
     @media${device.mobile} {
       background-color: white;
@@ -26,12 +26,12 @@ export const Div = styled.div`
       margin: 3rem auto;
     }
   }
-  .left {
+  .left-cont {
     padding-left: 5rem;
 
     @media ${device.mobile} {
       text-align: center;
-      height: 33vh;
+      height: auto;
       background-color: #ffe9ee;
       padding-left: 0rem;
       border-radius: 1rem;
@@ -42,7 +42,7 @@ export const Div = styled.div`
       margin-top: 0.3rem;
 
       @media${device.mobile} {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
       }
     }
     h6 {
@@ -53,17 +53,18 @@ export const Div = styled.div`
       color: #ff2156;
 
       @media${device.mobile} {
+        letter-spacing: 0.2rem;
         font-size: 0.7rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
     }
     h2 {
       font-size: 2rem;
 
       @media${device.mobile} {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
-        margin-top: 1rem;
+        margin-top: 0.6rem;
       }
     }
     button {
@@ -75,9 +76,15 @@ export const Div = styled.div`
       color: white;
       font-weight: 500;
       font-size: 0.9rem;
+
+      @media${device.mobile} {
+        margin-top: 1rem;
+
+        padding: 0.3rem 1rem;
+      }
     }
   }
-  .right {
+  .img-cont {
     margin-top: 1rem;
     padding-left: 3rem;
     @media ${device.mobile} {

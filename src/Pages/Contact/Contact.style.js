@@ -9,8 +9,6 @@ export const Div = styled.div`
 
   img {
     @media ${device.mobile} {
-      margin-top: 5rem;
-      width: 390px;
     }
   }
   .overlay {
@@ -22,7 +20,7 @@ export const Div = styled.div`
     left: 0;
     z-index: 2;
   }
-  .right {
+  .cont {
     text-align: center;
     height: auto;
     width: 390px;

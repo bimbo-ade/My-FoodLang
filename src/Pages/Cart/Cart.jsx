@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Div, Dav, Sum, Button } from "./Cart.style";
+import { Header, Div, Content, Sum, Button } from "./Cart.style";
 
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../../Redux/Feature/Cart/cartSlice";
@@ -10,7 +10,6 @@ import {
   increase,
   decrease,
 } from "../../Redux/Feature/Cart/cartSlice";
-import Images from "../../assests/images";
 const Cart = () => {
   const dispatch = useDispatch();
   const { cartItems, total, amount } = useSelector((state) => state.cart);
@@ -22,12 +21,12 @@ const Cart = () => {
     <>
       <Header>Shopping Cart</Header>
       <Div>
-        <div className="left">
+        <div className="cont">
           {cartItems.map((item) => {
             const { id, img, title, price, amount, desc } = item;
 
             return (
-              <Dav>
+              <Content>
                 <div className="cardd">
                   <img src={img} alt="food" width={70} />
 
@@ -69,13 +68,11 @@ const Cart = () => {
                     <IoIosClose />
                   </div>
                 </div>
-              </Dav>
+              </Content>
             );
           })}
         </div>
-        <div className="right">
-          <img src={Images.burger} alt="burger" width={500} />
-        </div>
+        <div className="right"></div>
       </Div>
       <Sum className="sum">
         Subtotal : <span> ${total.toFixed(2)} </span>

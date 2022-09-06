@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <Line></Line>
       <Div>
-        <div className="left">
+        <div className="img-cont">
           <img src={Images.foodlang} alt="logo" width={200} />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -19,7 +19,7 @@ const Footer = () => {
             veritatis facere necessitatibus.
           </p>
         </div>
-        <div className="right">
+        <div className="links">
           <div className="about">
             <h3>About</h3>
             <ul>

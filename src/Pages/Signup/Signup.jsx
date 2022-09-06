@@ -8,7 +8,7 @@ const Signup = () => {
       <img src={Images.banner} alt="login" width={900} />
       <div className="overlay"></div>
 
-      <div className="right">
+      <div className="cont">
         <h2>Sign Up</h2>
         <input type="text" placeholder="fullname" />
         <input type="text" placeholder="email" />

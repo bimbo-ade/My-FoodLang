@@ -16,7 +16,7 @@ const Navbar = () => {
   const { amount } = useSelector((store) => store.cart);
   return (
     <Div>
-      <div className="title">
+      <div className="img-cont">
         <img src={Images.foodlang} alt="logo" width={120} />
       </div>
       <div className={click ? "  links active " : "links"}>
@@ -71,7 +71,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="cart-icon">
+        <div className="cart-icon-btn">
           <Link to="/cart" onClick={closeMobileMenu}>
             <BsCartCheck />
           </Link>

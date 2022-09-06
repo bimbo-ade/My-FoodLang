@@ -41,7 +41,7 @@ export const Content = styled.div`
   @media ${device.mobile} {
     justify-content: space-evenly;
   }
-  .cardd {
+  .card {
     margin-top: 2rem;
     height: 320px;
     width: 220px;
@@ -51,7 +51,7 @@ export const Content = styled.div`
 
     text-align: center;
   }
-  .img {
+  .img-cont {
     height: 50%;
     width: 100%;
     margin: 1rem auto 0;

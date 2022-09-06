@@ -13,9 +13,9 @@ const Reviews = () => {
         {Reviewsdata.map((items, index) => {
           return (
             <>
-              <div className="cardd" key={index}>
+              <div className="card-cont" key={index}>
                 <p className="desc">"{items.desc}"</p>
-                <img src={Images.girl} alt="food" width={50} />
+                <img src={Images.girl} alt="food" width={40} />
                 <div>
                   <h4 className="title">{items.name}</h4>
                 </div>

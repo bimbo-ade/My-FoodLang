@@ -86,7 +86,7 @@ export const Div = styled.div`
     font-size: 0.9rem;
   }
 
-  .cart-icon {
+  .cart-icon-btn {
     position: relative;
 
     @media ${device.mobile} {

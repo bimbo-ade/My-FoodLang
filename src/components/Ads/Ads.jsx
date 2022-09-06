@@ -6,7 +6,7 @@ const Ads = () => {
   return (
     <Div>
       <div className="card">
-        <div className="left">
+        <div className="left-cont">
           <h6>DOWNLOAD APP </h6>
           <h2> Need Your Food Language Spoken?</h2>
           <p>
@@ -30,7 +30,7 @@ const Ads = () => {
             </Link>
           </button>
         </div>
-        <div className="right">
+        <div className="img-cont">
           <img src={Images.ads} alt="ads" width={490} />
         </div>
       </div>

@@ -37,8 +37,8 @@ const Home = () => {
             </Link>
           </button>
         </div>
-        <div className="img-cont">
-          <div className="img">
+        <div>
+          <div className="img-cont">
             <img src={Images.banner} alt="banner" />
           </div>
         </div>

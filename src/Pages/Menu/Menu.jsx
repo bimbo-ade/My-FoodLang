@@ -69,8 +69,8 @@ const Menu = () => {
             const { id, img, title, price, desc } = items;
             return (
               <>
-                <div className="cardd" key={id}>
-                  <div className="img">
+                <div className="card" key={id}>
+                  <div className="img-cont">
                     <img src={img} alt="food" />
                   </div>
 

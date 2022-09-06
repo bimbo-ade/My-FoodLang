@@ -67,7 +67,7 @@ export const Div = styled.div`
     font-size: 0.9rem;
   }
 
-  .img {
+  .img-cont {
     margin-top: 5rem;
     margin-left: 3rem;
     display: flex;

@@ -22,7 +22,7 @@ export const Div = styled.div`
     text-align: center;
   }
 
-  .left {
+  .img-cont {
     img {
       margin-bottom: 1rem;
 
@@ -41,7 +41,7 @@ export const Div = styled.div`
       }
     }
   }
-  .right {
+  .links {
     display: flex;
     justify-content: space-evenly;
 

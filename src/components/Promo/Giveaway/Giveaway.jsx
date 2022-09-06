@@ -9,8 +9,8 @@ const Giveaway = () => {
       <Carousel images={images} className="slides" />
 
       <Div>
-        <div className="card">
-          <div className="left">
+        <div className="card-cont">
+          <div className="left-cont">
             <h6>PROMO! PROMO!! </h6>
             <h2> Get Your Food Language Spoken For Free!!</h2>
             <p>

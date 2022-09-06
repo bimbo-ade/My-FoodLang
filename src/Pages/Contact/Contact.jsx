@@ -7,7 +7,7 @@ const Login = () => {
       <img src={Images.banner} alt="login" width={990} />
       <div className="overlay"></div>
 
-      <div className="right">
+      <div className="cont">
         <h2>Contact Us</h2>
         <input type="text" placeholder="email" />
 

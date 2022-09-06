@@ -8,9 +8,8 @@ const Login = () => {
       <img src={Images.Lunch2} alt="login" width={900} />
       <div className="overlay"></div>
 
-      <div className="right">
+      <div className="cont">
         <h2>Login</h2>
-        {/* <p>Login into your Account</p> */}
         <input type="text" placeholder="email" />
 
         <input type="password" placeholder="password" />

@@ -21,19 +21,19 @@ export const Div = styled.div`
     grid-template-columns: 100%;
   }
 
-  .left {
+  .cont {
     height: auto;
   }
-  .right {
-    display: none;
-    margin-left: 2rem;
-    @media ${device.mobile} {
-      display: none;
-    }
-    @media ${device.ipad} {
-      display: none;
-    }
-  }
+  // .right {
+  //   display: none;
+  //   margin-left: 2rem;
+  //   @media ${device.mobile} {
+  //     display: none;
+  //   }
+  //   @media ${device.ipad} {
+  //     display: none;
+  //   }
+  // }
 `;
 export const Sum = styled.p`
   text-align: center;
@@ -57,7 +57,7 @@ export const Button = styled.div`
   }
 `;
 
-export const Dav = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
