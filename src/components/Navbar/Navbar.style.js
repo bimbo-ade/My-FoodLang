@@ -62,7 +62,7 @@ export const Div = styled.div`
     text-decoration: 0;
 
     @media ${device.mobile} {
-      padding: 1.3rem;
+      padding: 1.35rem;
       text-align: center;
       margin-bottom: 0;
     }
@@ -95,7 +95,7 @@ export const Div = styled.div`
       align-items: center;
       justify-content: space-between;
       height: 100px;
-      margin-bottom: 0.6rem;
+      margin-bottom: 1rem;
     }
 
     svg {
@@ -126,11 +126,11 @@ export const Div = styled.div`
   }
 
   .menu-icon {
-    font-size: 2rem;
     display: none;
 
     @media ${device.mobile} {
       display: block;
+      font-size: 2rem;
     }
   }
 `;

@@ -10,7 +10,7 @@ export const Div = styled.div`
   img {
     @media ${device.mobile} {
       margin-top: 5rem;
-      width: 440px;
+      width: 410px;
     }
   }
   .overlay {

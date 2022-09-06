@@ -5,13 +5,14 @@ width: 90%;
 margin: 2rem auto;
 
 h1 {
-width: 25rem;
 font-size: 1.5rem;
 span {
   color: #ff2156;
 }
 
 @media ${device.mobile}{
+  
+
   text-align:center;
 }
 `;

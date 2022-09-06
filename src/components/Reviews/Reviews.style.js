@@ -6,7 +6,6 @@ export const Div = styled.div`
   margin: 7rem auto 0;
 
   h1 {
-    width: 25rem;
     font-size: 1.5rem;
     span {
       color: #ff2156;

@@ -67,17 +67,13 @@ export const Div = styled.div`
     font-size: 0.9rem;
   }
 
-  .img-cont {
-    height: 100%;
-    width: 100%;
-  }
   .img {
     margin-top: 5rem;
     margin-left: 3rem;
     display: flex;
     align-items: center;
     background-color: #ffd1dc;
-    width: 90%;
+
     border-radius: 50%;
 
     @media ${device.mobile} {

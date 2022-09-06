@@ -27,7 +27,7 @@ export const Div = styled.div`
       margin-bottom: 1rem;
 
       @media ${device.mobile} {
-        width: 160px;
+        width: 130px;
 
         margin-bottom: 0rem;
       }

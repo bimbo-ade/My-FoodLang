@@ -3,6 +3,9 @@ import { device } from "../../Device";
 
 export const Slides = styled.div`
   position: relative;
+  @media${device.mobile} {
+    margin-bottom: 10rem;
+  }
 `;
 
 export const Div = styled.div`
@@ -29,6 +32,7 @@ export const Div = styled.div`
     border-radius: 1rem;
 
     @media${device.mobile} {
+      display: none;
       background-image: none;
       display: grid;
       grid-template-columns: 100%;
@@ -52,7 +56,7 @@ export const Div = styled.div`
       text-align: center;
       height: 37vh;
       background-color: #ffe9ee;
-      padding-left: 0rem;
+
       border-radius: 1rem;
       padding: 1rem;
     }
@@ -61,6 +65,7 @@ export const Div = styled.div`
       height: 37vh;
       background-color: #ffe9ee;
       padding-left: 0rem;
+
       border-radius: 1rem;
       padding: 1rem;
     }
@@ -85,7 +90,7 @@ export const Div = styled.div`
 
       @media${device.mobile} {
         font-size: 0.7rem;
-        margin-top: 2rem;
+        margin-top: 0.9rem;
       }
       @media${device.ipad} {
         font-size: 0.7rem;
