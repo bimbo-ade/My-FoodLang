@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-import Menu from "./components/Pages/Menu/Menu";
-import Login from "./components/Forms/Login/Login";
-import Signup from "./components/Forms/Signup/Signup";
-import Contact from "./components/Pages/Contact/Contact";
-import Cart from "./components/Pages/Cart/Cart";
+import Menu from "./Pages/Menu/Menu";
+import Login from "./Pages/Login/Login";
+import Signup from "./Pages/Signup/Signup";
+import Contact from "./Pages/Contact/Contact";
+import Cart from "./Pages/Cart/Cart";
 import { useDispatch, useSelector } from "react-redux";
 import { calculateTotals } from "./Redux/Feature/Cart/cartSlice";
 const App = () => {

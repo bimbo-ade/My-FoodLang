@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Div, Content } from "./Menu.style";
-import Menudata from "../../../Data/Menudata";
+import Menudata from "../../Data/Menudata";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../../Redux/Feature/Cart/cartSlice";
+import { addToCart } from "../../Redux/Feature/Cart/cartSlice";
 const Menu = () => {
   const dispatch = useDispatch();
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../Device";
+import { device } from "../../components/Device";
 
 export const Div = styled.div`
   width: 80%;

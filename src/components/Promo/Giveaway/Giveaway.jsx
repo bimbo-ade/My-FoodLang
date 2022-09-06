@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Images from "../../assests/images";
-import images from "../Carousel/images";
+import React from "react";
+import images from "../../Carousel/images";
 import { Div, Slides } from "./Giveaway.style";
 import Timer from "../Timer/Timer";
-import ImageSlider from "../Carousel/carousel";
+import Carousel from "../../Carousel/carousel";
 const Giveaway = () => {
   return (
     <Slides>
-      <ImageSlider images={images} className="slides" />
+      <Carousel images={images} className="slides" />
 
       <Div>
         <div className="card">

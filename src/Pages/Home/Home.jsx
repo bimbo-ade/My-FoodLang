@@ -1,11 +1,11 @@
 import React from "react";
 import { Cont, Div } from "./Home.style";
-import Ads from "../../Ads/Ads";
-import PopularDishesPage from "../../PopularDishes/PopularDishes";
-import Reviews from "../../Reviews/Reviews";
+import Ads from "../../components/Ads/Ads";
+import PopularDishesPage from "../../components/PopularDishes/PopularDishes";
+import Reviews from "../../components/Reviews/Reviews";
 import { Link } from "react-router-dom";
-import Giveaway from "../../Giveaway/Giveaway";
-import Images from "../../../assests/images";
+import Giveaway from "../../components/Promo/Giveaway/Giveaway";
+import Images from "../../assests/images";
 
 const Home = () => {
   return (

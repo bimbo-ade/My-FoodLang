@@ -43,24 +43,26 @@ const Timer = () => {
     <>
       <Header>Time Left</Header>
       <Div>
-        <div>
-          <h4>{days}</h4>
-          <p>Days</p>
-        </div>
-        <span>:</span>
-        <div>
-          <h4>{hours}</h4>
-          <p>Hours</p>
-        </div>
-        <span>:</span>
-        <div>
-          <h4>{minutes}</h4>
-          <p>Minutes</p>
-        </div>
-        <span>:</span>
-        <div>
-          <h4>{seconds}</h4>
-          <p>Seconds</p>
+        <div className="cont">
+          <div>
+            <h4>{days}</h4>
+            <p>Days</p>
+          </div>
+          <span>:</span>
+          <div>
+            <h4>{hours}</h4>
+            <p>Hours</p>
+          </div>
+          <span>:</span>
+          <div>
+            <h4>{minutes}</h4>
+            <p>Minutes</p>
+          </div>
+          <span>:</span>
+          <div>
+            <h4>{seconds}</h4>
+            <p>Seconds</p>
+          </div>
         </div>
       </Div>
     </>

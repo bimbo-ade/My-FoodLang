@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../Device";
+import { device } from "../../components/Device";
 
 export const Header = styled.div`
   text-align: center;
@@ -12,8 +12,12 @@ export const Div = styled.div`
   width: 90%;
 
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 80%;
+  justify-content: center;
   @media ${device.mobile} {
+    grid-template-columns: 100%;
+  }
+  @media ${device.ipad} {
     grid-template-columns: 100%;
   }
 
@@ -21,8 +25,12 @@ export const Div = styled.div`
     height: auto;
   }
   .right {
+    display: none;
     margin-left: 2rem;
     @media ${device.mobile} {
+      display: none;
+    }
+    @media ${device.ipad} {
       display: none;
     }
   }
@@ -30,20 +38,23 @@ export const Div = styled.div`
 export const Sum = styled.p`
   text-align: center;
   margin-top: 2rem;
-  color: red;
 
   span {
+    color: red;
     font-weight: 700;
   }
 `;
 
-export const Button = styled.button`
-  padding: 0.6rem;
-  border-radius: 0.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: red;
+export const Button = styled.div`
+  text-align: center;
+  button {
+    margin: 2rem 0;
+    padding: 0.33rem 0.6rem;
+    background-color: red;
+    color: white;
+    border-radius: 0.6rem;
+    border: 1px solid red;
+  }
 `;
 
 export const Dav = styled.div`
@@ -62,12 +73,26 @@ export const Dav = styled.div`
     margin-bottom: 1rem;
     border-bottom: 1px solid #e0e0e0;
     width: 100%;
+
+    @media ${device.mobile} {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 1rem;
+    }
+  }
+  img {
+    @media ${device.mobile} {
+      width: 120px;
+    }
   }
 
   .title {
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
     text-align: left;
+    @media ${device.mobile} {
+      text-align: center;
+    }
   }
   .price {
     margin-top: 0.7rem;
@@ -78,7 +103,7 @@ export const Dav = styled.div`
     font-size: 0.7rem;
   }
   .btn {
-    margin: 0 0.3rem;
+    margin: 0.5rem;
     padding: 0.5rem 0.5rem;
 
     border: 1px solid #ff2156;
@@ -88,5 +113,10 @@ export const Dav = styled.div`
   }
   svg {
     font-size: 1.3rem;
+    @media ${device.mobile} {
+      margin-top: 1rem;
+
+      background-color: red;
+    }
   }
 `;

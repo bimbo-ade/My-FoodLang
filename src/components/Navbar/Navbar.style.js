@@ -5,9 +5,14 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ffd1dc;
+  border-bottom: 1px solid gray;
   padding: 2rem 3rem 0.5rem;
-  position: relative;
+  // position: relative;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 14;
 
   .links {
     display: flex;

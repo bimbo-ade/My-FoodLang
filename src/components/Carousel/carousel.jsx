@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import { Div } from "./carousel.style";
 
-const ImageSlider = ({ images }) => {
+const Carousel = ({ images }) => {
   const settings = {
     infinite: true,
     dots: false,
@@ -28,4 +28,4 @@ const ImageSlider = ({ images }) => {
     </>
   );
 };
-export default ImageSlider;
+export default Carousel;

@@ -2,15 +2,15 @@ import React from "react";
 import { Header, Div, Dav, Sum, Button } from "./Cart.style";
 
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart } from "../../../Redux/Feature/Cart/cartSlice";
+import { clearCart } from "../../Redux/Feature/Cart/cartSlice";
 
 import { IoIosClose } from "react-icons/io";
 import {
   removeItem,
   increase,
   decrease,
-} from "../../../Redux/Feature/Cart/cartSlice";
-import Images from "../../../assests/images";
+} from "../../Redux/Feature/Cart/cartSlice";
+import Images from "../../assests/images";
 const Cart = () => {
   const dispatch = useDispatch();
   const { cartItems, total, amount } = useSelector((state) => state.cart);
@@ -85,7 +85,7 @@ const Cart = () => {
           dispatch(clearCart());
         }}
       >
-        Clear Cart
+        <button> Clear Cart</button>
       </Button>
     </>
   );

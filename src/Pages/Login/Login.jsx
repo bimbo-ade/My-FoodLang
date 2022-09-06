@@ -1,7 +1,7 @@
 import React from "react";
 import { Div } from "./login.style";
 import { Link } from "react-router-dom";
-import Images from "../../../assests/images";
+import Images from "../../assests/images";
 const Login = () => {
   return (
     <Div>

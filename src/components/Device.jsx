@@ -1,12 +1,12 @@
 const minSizes = {
   mobile: "320px",
-  ipad: "481px",
+  ipad: "769px",
   laptop: "769px",
   desktop: "1025px",
 };
 const maxSizes = {
   mobile: "768px",
-  ipad: "768px",
+  ipad: "1024px",
   laptop: "1024px",
   desktop: "1440px",
 };

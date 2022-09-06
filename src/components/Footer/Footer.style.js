@@ -46,7 +46,10 @@ export const Div = styled.div`
     justify-content: space-evenly;
 
     @media ${device.mobile} {
-      display: block;
+      flex-wrap: wrap;
+    }
+    @media ${device.ipad} {
+      flex-wrap: wrap;
     }
     h3 {
       margin-bottom: 1rem;
