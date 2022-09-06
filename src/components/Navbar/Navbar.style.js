@@ -5,7 +5,7 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #eeeeee;
   padding: 2rem 3rem 0.5rem;
   // position: relative;
   background-color: white;
@@ -23,7 +23,7 @@ export const Div = styled.div`
     @media ${device.mobile} {
       justify-content: start;
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -62,7 +62,7 @@ export const Div = styled.div`
     text-decoration: 0;
 
     @media ${device.mobile} {
-      padding: 0.9rem;
+      padding: 1.1rem;
       text-align: center;
       margin-bottom: 0;
     }
@@ -94,8 +94,8 @@ export const Div = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 80px;
-      margin-bottom: 0.7rem;
+      height: 90px;
+      margin-bottom: 0.6rem;
     }
 
     svg {

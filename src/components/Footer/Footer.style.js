@@ -57,6 +57,7 @@ export const Div = styled.div`
 
       @media ${device.mobile} {
         margin-top: 3rem;
+        text-align: left;
       }
     }
     ul li {
@@ -66,7 +67,7 @@ export const Div = styled.div`
       text-align: left;
       margin-bottom: 1rem;
       @media ${device.mobile} {
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -76,7 +77,7 @@ export const Div = styled.div`
       padding-right: 1.2rem;
 
       @media ${device.mobile} {
-        padding: 1rem 0 0 0.7rem;
+        padding: 1rem;
       }
     }
     p {

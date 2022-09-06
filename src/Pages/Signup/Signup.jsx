@@ -5,7 +5,7 @@ import Images from "../../assests/images";
 const Signup = () => {
   return (
     <Div>
-      <img src={Images.banner} alt="login" width={990} />
+      <img src={Images.banner} alt="login" width={900} />
       <div className="overlay"></div>
 
       <div className="right">

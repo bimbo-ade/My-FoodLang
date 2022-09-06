@@ -87,7 +87,7 @@ export const Div = styled.div`
     }
     img {
       @media ${device.mobile} {
-        width: 390px;
+        width: 340px;
       }
     }
   }

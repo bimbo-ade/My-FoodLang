@@ -40,7 +40,7 @@ export const Sum = styled.p`
   margin-top: 2rem;
 
   span {
-    color: red;
+    color: #ff2156;
     font-weight: 700;
   }
 `;
@@ -49,11 +49,11 @@ export const Button = styled.div`
   text-align: center;
   button {
     margin: 2rem 0;
-    padding: 0.33rem 0.6rem;
-    background-color: red;
+    padding: 0.4rem 0.7rem;
+    background-color: #ff2156;
     color: white;
-    border-radius: 0.6rem;
-    border: 1px solid red;
+    border-radius: 2rem;
+    border: 1px solid #ff2156;
   }
 `;
 
@@ -92,6 +92,7 @@ export const Dav = styled.div`
     text-align: left;
     @media ${device.mobile} {
       text-align: center;
+      margin-top: 0.6rem;
     }
   }
   .price {
@@ -107,7 +108,7 @@ export const Dav = styled.div`
     padding: 0.5rem 0.5rem;
 
     border: 1px solid #ff2156;
-    color: #ff2156;
+    // color: #ff2156;
     font-weight: 700;
     font-size: 0.6rem;
   }
@@ -116,7 +117,7 @@ export const Dav = styled.div`
     @media ${device.mobile} {
       margin-top: 1rem;
 
-      background-color: red;
+      background-color: #ff2156;
     }
   }
 `;

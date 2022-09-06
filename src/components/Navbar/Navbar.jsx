@@ -55,7 +55,7 @@ const Navbar = () => {
               })}
             >
               {" "}
-              Contact Us
+              Contact
             </NavLink>
           </li>
           <li onClick={closeMobileMenu}>

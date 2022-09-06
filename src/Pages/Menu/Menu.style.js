@@ -9,11 +9,11 @@ export const Div = styled.div`
     text-align: center;
   }
   button {
-    margin:1.5rem 0 0 0.7rem;
+    margin: 1.5rem 0 0 0.7rem;
     padding: 0.4rem 1.2rem;
     border-radius: 2rem;
     border: 1px solid #ff2156;
-    
+
     font-weight: 500;
     font-size: 0.6em;
     transition: 0.2s ease;
@@ -24,9 +24,9 @@ export const Div = styled.div`
       color: white;
     }
     @media ${device.mobile} {
-      padding: 0.4rem 0.9em;
-      
-    margin -right: 1.2rem;
+      padding: 0.3rem 0.6em;
+
+      margin-right: -0.3rem;
     }
   }
   .active {

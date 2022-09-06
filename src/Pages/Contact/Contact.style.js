@@ -7,6 +7,12 @@ export const Div = styled.div`
   position: relative;
   color: white;
 
+  img {
+    @media ${device.mobile} {
+      margin-top: 5rem;
+      width: 480px;
+    }
+  }
   .overlay {
     width: 100%;
     height: 100%;
@@ -32,8 +38,8 @@ export const Div = styled.div`
     padding: 50px 35px;
     z-index: 3;
     @media${device.mobile} {
-      width: 300px;
-
+      width: 280px;
+      top: 45%;
       padding: 20px 20px;
     }
   }
