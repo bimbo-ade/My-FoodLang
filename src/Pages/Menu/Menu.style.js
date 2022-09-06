@@ -24,9 +24,7 @@ export const Div = styled.div`
       color: white;
     }
     @media ${device.mobile} {
-      padding: 0.3rem 0.6em;
-
-      margin-right: -0.3rem;
+      padding: 0.4rem 0.7em;
     }
   }
   .active {

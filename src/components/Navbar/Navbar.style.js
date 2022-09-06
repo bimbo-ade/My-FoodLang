@@ -62,7 +62,7 @@ export const Div = styled.div`
     text-decoration: 0;
 
     @media ${device.mobile} {
-      padding: 1.1rem;
+      padding: 1.3rem;
       text-align: center;
       margin-bottom: 0;
     }
@@ -94,7 +94,7 @@ export const Div = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 90px;
+      height: 100px;
       margin-bottom: 0.6rem;
     }
 
