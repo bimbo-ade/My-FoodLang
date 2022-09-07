@@ -1,12 +1,12 @@
 const minSizes = {
   mobile: "320px",
   ipad: "766px",
-  laptop: "1024px",
+  laptop: "1025px",
 };
 const maxSizes = {
   mobile: "765px",
-  ipad: "1030px",
-  laptop: "1440px",
+  ipad: "1024px",
+  laptop: "1300px",
 };
 export const device = {
   mobile: `(min-width:${minSizes.mobile} )and ( max-width:${maxSizes.mobile})`,

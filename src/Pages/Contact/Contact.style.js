@@ -5,6 +5,7 @@ export const Div = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+  text-align: center;
   color: white;
 
   img {
@@ -13,6 +14,10 @@ export const Div = styled.div`
       width: 350px;
     }
     @media ${device.ipad} {
+      margin-top: 6rem;
+      width: 700px;
+    }
+    @media ${device.laptop} {
       margin-top: 10rem;
       width: 700px;
     }
@@ -47,7 +52,9 @@ export const Div = styled.div`
       padding: 20px 20px;
     }
     @media${device.ipad} {
-      top: 40%;
+      width: 400px;
+      top: 50%;
+      padding: 30px 35px;
     }
   }
   input {

@@ -15,7 +15,7 @@ export const Div = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
 
   @media ${device.mobile} {
     width: 100%;
@@ -34,6 +34,9 @@ export const Div = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
+  }
+  @media ${device.laptop} {
+    height: 65vh;
   }
   .text {
     @media ${device.mobile} {
@@ -101,8 +104,9 @@ export const Div = styled.div`
     }
     @media ${device.ipad} {
       margin: 3rem auto 1rem;
-      width: 70%;
+      width: 50%;
     }
+    
     img {
       width: 100%;
     }

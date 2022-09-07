@@ -13,8 +13,12 @@ export const Div = styled.div`
       width: 350px;
     }
     @media ${device.ipad} {
+      margin-top: 7rem;
+      width: 650px;
+    }
+    @media ${device.laptop} {
       margin-top: 10rem;
-      width: 700px;
+      width: 680px;
     }
   }
   .overlay {
@@ -47,7 +51,7 @@ export const Div = styled.div`
     }
     @media${device.ipad} {
       
-      top: 40%;
+      top: 45%;
     }
   }
   input {

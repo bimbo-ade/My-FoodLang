@@ -3,6 +3,7 @@ import { device } from "../../components/Device";
 export const Div = styled.div`
   width: 100%;
   height: 100vh;
+  text-align: center;
   position: relative;
   color: white;
 
@@ -12,6 +13,10 @@ export const Div = styled.div`
       width: 350px;
     }
     @media ${device.ipad} {
+      margin-top: 7rem;
+      width: 650px;
+    }
+    @media ${device.laptop} {
       margin-top: 10rem;
       width: 700px;
     }
@@ -47,7 +52,7 @@ export const Div = styled.div`
     }
     @media${device.ipad} {
       
-      top: 40%;
+      top: 50%;
     }
   }
   input {

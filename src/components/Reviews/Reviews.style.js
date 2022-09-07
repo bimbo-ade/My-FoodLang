@@ -3,10 +3,11 @@ import { device } from "../Device";
 
 export const Div = styled.div`
   width: 90%;
-  margin: 7rem auto 0;
+  margin: 5rem auto 0;
   @media ${device.mobile} {
-    margin: 7rem auto 0;
+    margin: 6rem auto 0;
   }
+ 
 
   h1 {
     font-size: 1.5rem;

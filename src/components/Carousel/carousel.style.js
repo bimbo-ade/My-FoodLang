@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { device } from "../../components/Device";
+
 export const Div = styled.div`
   width: 90%;
   background-color: transparent;
@@ -10,5 +12,14 @@ export const Div = styled.div`
     margin-left: 37rem;
     width: 40%;
     height: 40%;
+    @media ${device.ipad}{
+      opacity:0;
+
+    }
+    @media ${device.mobile}{
+      opacity:0;
+
+    }
+ 
   }
 `;

@@ -53,7 +53,7 @@ export const Div = styled.div`
       background-color: #ffe9ee;
       padding-left: 0rem;
       border-radius: 1rem;
-      padding: 1rem;
+      padding: 2rem 0;
     }
     p {
       font-size: 0.8rem;
