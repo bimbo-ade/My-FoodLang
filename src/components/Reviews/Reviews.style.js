@@ -29,10 +29,10 @@ export const Content = styled.div`
     @media ${device.mobile} {
    justify-content: center ;
     }
-  
-    
+      
   }
   .card-cont {
+    text-align:center;
     margin-top: 2rem;
     height: auto;
     width: 320px;
@@ -43,12 +43,14 @@ export const Content = styled.div`
   img {
     border-radius: 50%;
     margin-top: 0.8rem;
+    text-align:center;
   }
   .title {
     color: #9b0c26;
     font-size: 1rem;
     font-weight: 700;
     margin: 0.7rem 0;
+    text-align:center;
   }
 
   .desc {
@@ -58,5 +60,9 @@ export const Content = styled.div`
     text-align:center;
     margin: 1rem auto 0;
     font-weight: 500;
+    @media ${device.ipad} {
+      
+    font-size: 0.9rem;
+       }
   }
 `;

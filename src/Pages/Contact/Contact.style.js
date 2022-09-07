@@ -9,6 +9,12 @@ export const Div = styled.div`
 
   img {
     @media ${device.mobile} {
+      margin-top: 8rem;
+      width: 350px;
+    }
+    @media ${device.ipad} {
+      margin-top: 10rem;
+      width: 700px;
     }
   }
   .overlay {
@@ -40,6 +46,9 @@ export const Div = styled.div`
       top: 42%;
       padding: 20px 20px;
     }
+    @media${device.ipad} {
+      top: 40%;
+    }
   }
   input {
     height: 50px;
@@ -57,6 +66,10 @@ export const Div = styled.div`
       width: 90%;
       padding: 0 10px;
       font-size: 0.7rem;
+      margin: 0.5rem auto;
+    }
+    @media${device.ipad} {
+      font-size: 0.9rem;
       margin: 0.5rem auto;
     }
   }

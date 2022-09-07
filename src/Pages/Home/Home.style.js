@@ -26,8 +26,22 @@ export const Div = styled.div`
     justify-content: center;
     margin-bottom: 3rem;
   }
+  @media ${device.ipad} {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
   .text {
     @media ${device.mobile} {
+      width: 90%;
+      margin: 5rem auto 2rem;
+      text-align: center;
+    }
+    @media ${device.ipad} {
       width: 90%;
       margin: 5rem auto 2rem;
       text-align: center;
@@ -42,6 +56,11 @@ export const Div = styled.div`
     }
 
     @media ${device.mobile} {
+      width: 16rem;
+      margin: auto;
+      font-size: 1.7rem;
+    }
+    @media ${device.ipad} {
       width: 16rem;
       margin: auto;
       font-size: 1.7rem;
@@ -80,10 +99,12 @@ export const Div = styled.div`
       margin: 3rem auto 1rem;
       width: 70%;
     }
+    @media ${device.ipad} {
+      margin: 3rem auto 1rem;
+      width: 70%;
+    }
     img {
       width: 100%;
-      @media ${device.mobile} {
-      }
     }
   }
 `;

@@ -6,6 +6,7 @@ export const Slides = styled.div`
   @media${device.mobile} {
     margin-bottom: 7rem;
   }
+
 `;
 
 export const Div = styled.div`
@@ -42,11 +43,12 @@ export const Div = styled.div`
       margin: 0 auto 0;
     }
     @media ${device.ipad} {
+      height: auto;
+      display: none;
       background-image: none;
       display: grid;
       grid-template-columns: 100%;
       width: 90%;
-
       margin: 0 auto 0;
     }
   }
@@ -57,18 +59,15 @@ export const Div = styled.div`
       text-align: center;
       height: auto;
       background-color: #ffe9ee;
-
       border-radius: 1rem;
       padding: 1rem;
     }
     @media ${device.ipad} {
       text-align: center;
-      height: 37vh;
+      height: auto;
       background-color: #ffe9ee;
-      padding-left: 0rem;
-
       border-radius: 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     p {
@@ -79,7 +78,7 @@ export const Div = styled.div`
         font-size: 0.6rem;
       }
       @media${device.ipad} {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
     }
     h6 {
@@ -95,17 +94,17 @@ export const Div = styled.div`
         margin-top: 0.6rem;
       }
       @media${device.ipad} {
-        font-size: 0.7rem;
-        margin-top: 2rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
       }
     }
     h2 {
       font-size: 2rem;
 
       @media${device.mobile} {
-        font-size: 1rem;
+        font-size: 0.8rem;
 
-        margin-top: 0.6rem;
+        margin-top: 0.8rem;
       }
       @media${device.ipad} {
         font-size: 1.2rem;

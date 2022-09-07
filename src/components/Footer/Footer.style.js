@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../Device";
 
 export const Line = styled.div`
-  margin: 1rem auto 0;
+  margin: 5rem auto 0;
   height: 2px;
   width: 80%;
   background-color: #eeeeee;
@@ -21,6 +21,11 @@ export const Div = styled.div`
     grid-template-columns: 100%;
     text-align: center;
   }
+  @media ${device.ipad} {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
 
   .img-cont {
     img {
@@ -31,12 +36,20 @@ export const Div = styled.div`
 
         margin-bottom: 0rem;
       }
+      @media ${device.ipad} {
+        width: 130px;
+
+        margin-bottom: 0rem;
+      }
     }
     p {
       margin-bottom: 1rem;
       font-size: 0.9rem;
       font-weight: 400;
       @media ${device.mobile} {
+        display: none;
+      }
+      @media ${device.ipad} {
         display: none;
       }
     }
@@ -59,6 +72,10 @@ export const Div = styled.div`
         margin-top: 3rem;
         text-align: left;
       }
+      @media ${device.ipad} {
+        margin-top: 3rem;
+        text-align: left;
+      }
     }
     ul li {
       list-style: none;
@@ -67,6 +84,9 @@ export const Div = styled.div`
       text-align: left;
       margin-bottom: 1rem;
       @media ${device.mobile} {
+        text-align: left;
+      }
+      @media ${device.ipad} {
         text-align: left;
       }
     }
@@ -79,11 +99,17 @@ export const Div = styled.div`
       @media ${device.mobile} {
         padding: 1rem;
       }
+      @media ${device.ipad} {
+        padding: 1.2rem;
+      }
     }
     p {
       font-size: 0.9rem;
       margin-top: 0.4rem;
       @media ${device.mobile} {
+        display: none;
+      }
+      @media ${device.ipad} {
         display: none;
       }
     }

@@ -12,6 +12,10 @@ export const Div = styled.div`
       margin-top: 8rem;
       width: 350px;
     }
+    @media ${device.ipad} {
+      margin-top: 10rem;
+      width: 700px;
+    }
   }
   .overlay {
     width: 100%;
@@ -20,7 +24,7 @@ export const Div = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
   }
   .cont {
     text-align: center;
@@ -41,6 +45,10 @@ export const Div = styled.div`
       width: 250px;
       top: 40%;
     }
+    @media${device.ipad} {
+      
+      top: 40%;
+    }
   }
   input {
     height: 50px;
@@ -59,6 +67,13 @@ export const Div = styled.div`
       padding: 0 10px;
       font-size: 0.7rem;
       margin: 0.5rem auto;
+    }
+    @media${device.ipad} {
+      
+      width: 90%;
+      padding: 0 10px;
+      font-size: 0.9rem;
+    
     }
   }
   button {
