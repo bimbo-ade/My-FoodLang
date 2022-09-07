@@ -53,9 +53,9 @@ export const Div = styled.div`
       
     }
     @media ${device.laptop} {
-      height: 43vh;
+      height: auto;
       display: none;
-      
+      padding:1rem 0;
       display: grid;
       grid-template-columns: 100%;
       width: 90%;
@@ -80,7 +80,8 @@ export const Div = styled.div`
       padding: 2rem 0;
     }
     @media ${device.laptop} {
-    padding-left: 4rem;
+    
+    padding:2rem 2rem 2rem 5rem;
     }
     p {
       font-size: 0.8rem;
@@ -92,10 +93,14 @@ export const Div = styled.div`
       @media${device.ipad} {
         font-size: 0.7rem;
       }
-      @media${device.laptop} {
-        // font-size: 1rem;
-      }
+     
     }
+    .desc{
+      @media${device.laptop} {
+        width:27rem;
+        font-size: 1rem;
+      }
+     }
     h6 {
       font-size: 0.9rem;
       margin-top: 5rem;
@@ -112,7 +117,10 @@ export const Div = styled.div`
         font-size: 0.9rem;
         margin-top: 1rem;
       }
+      @media${device.laptop} {
+      margin-top: 1rem;
     }
+  }
     h2 {
       font-size: 2rem;
 

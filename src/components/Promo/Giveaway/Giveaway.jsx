@@ -13,7 +13,7 @@ const Giveaway = () => {
           <div className="left-cont">
             <h6>PROMO! PROMO!! </h6>
             <h2> Get Your Food Language Spoken For Free!!</h2>
-            <p className="">
+            <p className="desc">
               {" "}
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolor
               sit amet consectetu Sed.

@@ -141,6 +141,10 @@ export const Div = styled.div`
       @media ${device.ipad} {
         width: 400px;
       }
+      @media (min-width:1024px) and (max-width:1102px){
+        width: 420px;
+      }
+     
     }
   }
 `;
