@@ -3,7 +3,7 @@ const Menudata = [
   {
     id: "01",
     img: `${Images.Breakfast1}`,
-    title: "Chicken Burger",
+    title: "Snow Pancakes",
     price: 24.0,
     amount: 1,
     category: "Breakfast",
@@ -14,7 +14,7 @@ const Menudata = [
   {
     id: "02",
     img: `${Images.Fastfood3}`,
-    title: "Vegetarian Pizza",
+    title: "Chicken & Fries ",
     price: 115.0,
     amount: 1,
     category: "Breakfast",
@@ -25,7 +25,7 @@ const Menudata = [
   {
     id: "03",
     img: `${Images.Fastfood7}`,
-    title: "Double Cheese ",
+    title: "Veggies Shawarma ",
     price: 110.0,
     amount: 1,
     category: "Breakfast",
@@ -36,7 +36,7 @@ const Menudata = [
   {
     id: "04",
     img: `${Images.Breakfast4}`,
-    title: "Maxican Green Wave",
+    title: "Mexican Toast",
     price: 110.0,
     amount: 1,
     category: "Breakfast",
@@ -46,7 +46,7 @@ const Menudata = [
   {
     id: "05",
     img: `${Images.Breakfast5}`,
-    title: "Maxican Green Wave",
+    title: "Fruit Toast",
     price: 110.0,
     amount: 1,
     category: "Lunch",
@@ -56,7 +56,7 @@ const Menudata = [
   {
     id: "06",
     img: `${Images.Lunch1}`,
-    title: "Maxican Green Wave",
+    title: "Veggies Salad",
     price: 110.0,
     amount: 1,
     category: "Lunch",
@@ -66,7 +66,7 @@ const Menudata = [
   {
     id: "07",
     img: `${Images.Lunch2}`,
-    title: "Maxican Green Wave",
+    title: "Maxican Pasta",
     price: 110.0,
     amount: 1,
     category: "Lunch",
@@ -76,7 +76,7 @@ const Menudata = [
   {
     id: "08",
     img: `${Images.Lunch3}`,
-    title: "Maxican Green Wave",
+    title: "Italian Pasta",
     price: 110.0,
     amount: 1,
     category: "Lunch",
@@ -86,7 +86,7 @@ const Menudata = [
   {
     id: "09",
     img: `${Images.Lunch4}`,
-    title: "Maxican Green Wave",
+    title: "Omlette",
     price: 110.0,
     amount: 1,
     category: "Lunch",
@@ -96,7 +96,7 @@ const Menudata = [
   {
     id: "10",
     img: `${Images.Fastfood1}`,
-    title: "Maxican Green Wave",
+    title: "Cheese Burger",
     price: 110.0,
     amount: 1,
     category: "Dinner",
@@ -106,7 +106,7 @@ const Menudata = [
   {
     id: "11",
     img: `${Images.Fastfood2}`,
-    title: "Maxican Green Wave",
+    title: "Veggies Burger",
     price: 110.0,
     amount: 1,
     category: "Dinner",
@@ -116,7 +116,7 @@ const Menudata = [
   {
     id: "12",
     img: `${Images.Fastfood3}`,
-    title: "Maxican Green Wave",
+    title: "Chicken & Chips",
     price: 110.0,
     amount: 1,
     category: "Dinner",
@@ -176,7 +176,7 @@ const Menudata = [
   {
     id: "18",
     img: `${Images.drinks1}`,
-    title: "Maxican Green Wave",
+    title: "Milkshakes",
     price: 110.0,
     amount: 1,
     category: "Drinks",
@@ -186,7 +186,7 @@ const Menudata = [
   {
     id: "19",
     img: `${Images.drinks2}`,
-    title: "Maxican Green Wave",
+    title: "Cocacola Ice",
     price: 110.0,
     amount: 1,
     category: "Drinks",
@@ -196,7 +196,7 @@ const Menudata = [
   {
     id: "20",
     img: `${Images.drinks3}`,
-    title: "Maxican Green Wave",
+    title: "Fruit Puddings",
     price: 110.0,
     amount: 1,
     category: "Drinks",
@@ -206,7 +206,7 @@ const Menudata = [
   {
     id: "21",
     img: `${Images.drinks4}`,
-    title: "Maxican Green Wave",
+    title: "OatMeal Custard",
     price: 110.0,
     amount: 1,
     category: "Drinks",

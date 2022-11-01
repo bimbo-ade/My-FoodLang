@@ -9,7 +9,7 @@ const Timer = () => {
   let interval;
 
   const startTimer = () => {
-    const giveawayDate = new Date("Sep 30,2022").getTime();
+    const giveawayDate = new Date("Apr 30,2023").getTime();
 
     interval = setInterval(() => {
       const today = new Date().getTime();

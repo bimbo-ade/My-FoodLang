@@ -3,7 +3,7 @@ const PopularDishesData = [
   {
     id: "1",
     img: `${Images.Breakfast1}`,
-    title: "Chicken Burger",
+    title: "Snow Pancakes",
     price: 24.0,
     amount: 1,
     category: "Breakfast",
@@ -14,7 +14,7 @@ const PopularDishesData = [
   {
     id: "2",
     img: `${Images.Fastfood4}`,
-    title: "Vegetarian Pizza",
+    title: "Lettuce Burger",
     price: 115.0,
     amount: 1,
     category: "Breakfast",
@@ -25,7 +25,7 @@ const PopularDishesData = [
   {
     id: "3",
     img: `${Images.Lunch1}`,
-    title: "Double Cheese ",
+    title: "Vaeggies Salad ",
     price: 110.0,
     amount: 1,
     category: "Breakfast",
@@ -36,7 +36,7 @@ const PopularDishesData = [
   {
     id: "4",
     img: `${Images.Breakfast4}`,
-    title: "Maxican Green Wave",
+    title: "Maxican Toast",
     price: 110.0,
     amount: 1,
     category: "Breakfast",
