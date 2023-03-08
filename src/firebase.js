@@ -1,4 +1,6 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
   apiKey: "AIzaSyA6S8z51Tg_LOFDYgcznvG9VJkxDpKKwmA",
   authDomain: "foodlang-auth.firebaseapp.com",
@@ -9,3 +11,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export default app;
