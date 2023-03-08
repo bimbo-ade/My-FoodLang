@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Div } from "./Signup.style";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Images from "../../assests/images";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -9,12 +9,16 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
   const signup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }
+    setEmail("");
+    setPassword("");
   };
 
   return (
