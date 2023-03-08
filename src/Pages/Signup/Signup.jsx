@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import { Div } from "./Signup.style";
 import { Link } from "react-router-dom";
 import Images from "../../assests/images";
-import { auth } from "firebase/auth";
+import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signup = () => {};
+  const signup = async () => {
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return (
     <Div>
@@ -30,7 +36,7 @@ const Signup = () => {
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button>Submit</button>
+        <button onClick={signup}>Sign Up</button>
         <p>
           Already have an Account?{" "}
           <span>
