@@ -35,7 +35,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <p>Forgot password?</p>
-        <button onClick={login}>Submit </button>
+        <button onClick={login}>Login </button>
         <p>
           Dont have an Account?{" "}
           <span>
