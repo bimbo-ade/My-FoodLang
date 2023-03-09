@@ -17,8 +17,6 @@ const Signup = () => {
     } catch (error) {
       console.log(error.message);
     }
-    setEmail("");
-    setPassword("");
   };
 
   return (

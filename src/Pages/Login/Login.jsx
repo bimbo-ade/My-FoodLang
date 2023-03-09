@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Div } from "./login.style";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Images from "../../assests/images";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -8,10 +8,11 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const login = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }
