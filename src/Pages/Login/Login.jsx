@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { Div } from "./login.style";
 import { Link } from "react-router-dom";
 import Images from "../../assests/images";
+import { auth } from "../../firebase";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const login = () => {};
   return (
     <Div>
       <img src={Images.Lunch2} alt="login" width={900} />
