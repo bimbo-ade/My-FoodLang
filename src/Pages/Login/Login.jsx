@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Div } from "./login.style";
 import { Link } from "react-router-dom";
 import Images from "../../assests/images";
+
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <Div>
       <img src={Images.Lunch2} alt="login" width={900} />
@@ -10,9 +13,17 @@ const Login = () => {
 
       <div className="cont">
         <h2>Login</h2>
-        <input type="text" placeholder="email" />
+        <input
+          type="text"
+          placeholder="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-        <input type="password" placeholder="password" />
+        <input
+          type="password"
+          placeholder="password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <p>Forgot password?</p>
         <button>Submit </button>
         <p>
